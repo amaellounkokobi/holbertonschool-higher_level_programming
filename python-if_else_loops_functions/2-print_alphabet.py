@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 
-print('abcdefghijklmnopqrstuvwxyz', end='')
+for char in 'abcdefghijklmnopqrstuvwxyz':
+    print('{}'.format(char), end='')

@@ -1,0 +1,3 @@
+# Python - if/else, loops, functions
+
+Python basics, understanding the significance of indentation, utilizing if and if...else statements, incorporating comments, assigning values to variables, employing while and for loops, using break and continue statements, implementing else clauses in loops, grasping the purpose of the pass statement and its appropriate use, understanding the range function, exploring functions and their usage, comprehending the concept of return in functions, evaluating variable scopes, recognizing tracebacks, and mastering arithmetic operators are essential topics.

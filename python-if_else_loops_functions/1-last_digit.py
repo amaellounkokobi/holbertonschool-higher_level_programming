@@ -15,6 +15,6 @@ elif last_digit < 6 and not last_digit == 0:
     end_sentence = 'is less than 6 and not 0'
 else:
     end_sentence = 'is 0'
-    
+  
 # Building the final output
-print('Last digit of {} is {} and {}'.format(number,last_digit,end_sentence))
+print('Last digit of {} is {} and {}'.format(number, last_digit, end_sentence))

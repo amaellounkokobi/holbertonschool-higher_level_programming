@@ -6,5 +6,5 @@ for digit_one in range(10):
         if digit_one < digit_two:
             print('{0}{1}'.format(digit_one, digit_two), end='')
             if digit_one < 8:
-                print(', ',end='')
+                print(', ', end='')
 print('')

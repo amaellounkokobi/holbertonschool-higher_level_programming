@@ -2,11 +2,11 @@
 
 """ Square module
 
-This module descibe a class that represents a square 
+This module descibe a class that represents a square.
 
 Exemples:
    Verifying if the classsquare exists:
-      
+
       my_square = Square()
       print(type(my_square))
       print(my_square.__dict__)
@@ -17,13 +17,13 @@ Attributes
 Classes
    Square: Represent a square.
 
- 
+
 
 """
 
 
 class Square():
-    """ Empty class that represents a square 
+    """ Empty class that represents a square.
 
     Atributes:
        No Attributes.
@@ -31,4 +31,3 @@ class Square():
     """
 
     pass
-

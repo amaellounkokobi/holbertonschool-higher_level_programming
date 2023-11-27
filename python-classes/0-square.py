@@ -23,5 +23,12 @@ Classes
 
 
 class Square():
+    """ Empty class that represents a square 
+
+    Atributes:
+       No Attributes.
+
+    """
+
     pass
 

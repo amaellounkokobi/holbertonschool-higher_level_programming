@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+sgu#!/usr/bin/python3
 
 """ Square module
 
@@ -34,9 +34,8 @@ class Square():
 
         """ Initializing a square.
 
-        Args: 
+        Args:
            size (void): Size of the square.
 
         """
         self.__size = size
-

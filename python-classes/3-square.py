@@ -58,4 +58,4 @@ class Square():
            A number equals to the area of the square
 
         """
-        return __size * __size
+        return self.__size * self.__size

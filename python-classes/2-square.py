@@ -40,7 +40,7 @@ class Square():
            the size must be a positive int value
 
         """
-        
+
         if not type(size) is int:
             raise TypeError('size must be an integer')
         elif size < 0:

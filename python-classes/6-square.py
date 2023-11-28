@@ -110,8 +110,10 @@ class Square():
         """
         if not type(value) is tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif value[0] < 0 or value[1] < 0:
-            raise ValueError('position must be a tuple of 2 positive integers')
+        elif (not type(value[0]) is int) and (not type(value[1] is int)):
+            raise TypeError('position must be a tuple of 2 positive integers')
+        elif value[0] < 0 and value[1] < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
 
@@ -128,11 +130,10 @@ class Square():
                 print('\n'*y, end='')
 
             for line in range(self.__size):
-
+                if not self.__position == (0, 0):
+                    print(' '*x, end='')
+                    
                 for column in range(self.__size):
-                    if not self.__position == (0, 0):
-                        print(' '*x, end='')
-
                     print('#', end='')
                 print('')
 

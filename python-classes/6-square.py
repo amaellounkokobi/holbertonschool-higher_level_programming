@@ -37,8 +37,8 @@ class Square():
            position (tuple): X , y coordinate of the square
 
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """ Calculate the area of a square
@@ -78,6 +78,7 @@ class Square():
            ValueError, Size must be >= 0
 
         """
+
         if not type(value) is int:
             raise TypeError('size must be an integer')
         elif value < 0:
@@ -108,6 +109,7 @@ class Square():
            ValueError, Size x or y must be >= 0
 
         """
+
         if not type(value) is tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
         elif (not type(value[0]) is int) and (not type(value[1] is int)):
@@ -132,7 +134,7 @@ class Square():
             for line in range(self.__size):
                 if not self.__position == (0, 0):
                     print(' '*x, end='')
-                    
+
                 for column in range(self.__size):
                     print('#', end='')
                 print('')

@@ -81,10 +81,11 @@ class Square():
 
         if not type(value) is int:
             raise TypeError('size must be an integer')
-        elif value < 0:
+
+        if value < 0:
             raise ValueError('size must be >= 0')
-        else:
-            self.__size = value
+        
+        self.__size = value
 
 
     @property
@@ -109,15 +110,25 @@ class Square():
            ValueError, Size x or y must be >= 0
 
         """
-
         if not type(value) is tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif (not type(value[0]) is int) or (not type(value[1] is int)):
+
+        x = value[0]
+        y = value[1]
+
+        if not type(x) is int:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif value[0] < 0 or value[1] < 0:
+
+        if not type(y) is int:
             raise TypeError('position must be a tuple of 2 positive integers')
-        else:
-            self.__position = value
+        
+        if x < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
+
+        if y < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')       
+
+        self.__position = value
 
     def my_print(self):
         """ Printing a visual version of the square

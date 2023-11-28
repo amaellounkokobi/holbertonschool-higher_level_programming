@@ -52,9 +52,9 @@ class Square():
         return self.__size * self.__size
 
     @property
-    def __size(self):
+    def size(self):
         """ Get property to the size attribut
-    
+
         Args:
            No args.
 
@@ -64,9 +64,9 @@ class Square():
         """
         return self.__size
 
-    @__size.setter
-    def __size(self, value):
-        """ Set property to the size attribut 
+    @size.setter
+    def size(self, value):
+        """ Set property to the size attribut
 
         Args:
            value (int): Size of the square.

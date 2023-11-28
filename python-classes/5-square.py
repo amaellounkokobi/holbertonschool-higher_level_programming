@@ -85,7 +85,8 @@ class Square():
             self.__size = value
 
     def my_print(self):
-        """ Printing a visual version of the square using private parameter size
+        """ Printing a visual version of the square 
+        using private parameter size
 
         """
         if not self.size == 0:

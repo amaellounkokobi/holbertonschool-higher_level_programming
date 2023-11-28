@@ -17,8 +17,6 @@ Attributes
 Classes
    Square: Represent a square.
 
-
-
 """
 
 
@@ -38,10 +36,6 @@ class Square():
            size (void): Size of the square.
            the size must be a positive int value
 
-        Raise:
-           TypeError, Size must be an integer
-           ValueError, Size must be >= 0
-
         """
         self.__size = size
 
@@ -58,24 +52,24 @@ class Square():
         return self.__size * self.__size
 
     @property
-    def size(self):
-        """ Get the size attribut
-
+    def __size(self):
+        """ Get property to the size attribut
+    
         Args:
            No args.
 
         Returns:
-           Size value.
+           Int size value.
 
         """
         return self.__size
 
     @__size.setter
-    def size(self, value):
-        """ Set the value of the size
+    def __size(self, value):
+        """ Set property to the size attribut 
 
         Args:
-           size (void): Size of the square.
+           value (int): Size of the square.
            the size must be a positive int value
 
         Raise:

@@ -12,7 +12,7 @@ Examples:
 """
 
 
-def matrix_divided(matrix, div):
+def matrix_divided(matrix, div=None):
     """ This function that divides all elements of a matrix
     
     Args:
@@ -28,8 +28,6 @@ def matrix_divided(matrix, div):
        ZeroDivisionError exception with the message division by zero
 
     """
-
-    print(div)
     if div == 0:
         raise ZeroDivisionError('division by zero')
 

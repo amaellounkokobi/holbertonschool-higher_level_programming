@@ -16,10 +16,10 @@ def matrix_divided(matrix, div=None):
     """ This function that divides all elements of a matrix
 
     Args:
-       matrix(list[lists[int/float]]): Matrix must be a list 
+       matrix(list[lists[int/float]]): Matrix must be a list
        of lists of integers or floats.
-       
-       div(int/floar): The divided number must be an 
+
+       div(int/floar): The divided number must be an
        integer or a float. div can’t be equal to 0.
 
     Returns:
@@ -28,7 +28,7 @@ def matrix_divided(matrix, div=None):
        rounded to 2 decimal places
 
     Raise:
-       TypeError exception with the message matrix must be 
+       TypeError exception with the message matrix must be
        a matrix (list of lists) of integers/floats
        ZeroDivisionError exception with the message division by zero
 

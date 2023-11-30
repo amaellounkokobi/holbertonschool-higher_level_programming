@@ -7,7 +7,7 @@ examples:
    >>> print(add_integer(100, -2))
    98
    >>> print(add_integer(2))
-   100 
+   100
    >>> print(add_integer(100.3, -2))
    98
    >>> try:
@@ -35,9 +35,10 @@ def add_integer(a, b=98):
        (int): the addition of a and b
 
     Raise:
-       if a or b are not integers: TypeError exception with the message a must be an integer 
-       or b must be an integer
-       if a is empty : TypeError exception with the message a must be an integer 
+       if a or b are not integers: TypeError exception with
+       the message a must be an integer or b must be an integer
+       if a is empty : TypeError exception with the message
+       a must be an integer
 
     """
 
@@ -48,6 +49,12 @@ def add_integer(a, b=98):
         raise TypeError('a must be an integer')
 
     if not type(b) is int and not type(a) is float:
+        raise TypeError('b must be an integer')
+
+    if abs(a) == float('inf'):
+        raise TypeError('a must be an integer')
+
+    if abs(b) == float('inf'):
         raise TypeError('b must be an integer')
 
     return int(a) + int(b)

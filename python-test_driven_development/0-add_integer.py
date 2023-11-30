@@ -23,7 +23,6 @@ examples:
    a must be an integer
 
 """
-
 def add_integer(a, b=98):
     """ add_integer :This function adds two integers
 
@@ -41,7 +40,6 @@ def add_integer(a, b=98):
        a must be an integer
 
     """
-
     if a in locals():
         raise TypeError('a must be an integer')
 

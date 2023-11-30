@@ -53,7 +53,7 @@ def matrix_divided(matrix, div=None):
     line_len = len(matrix)
 
     if line_len == 0:
-        raise TypeError(msg1)
+        raise TypeError(err_msg1)
 
     for line in range(1, line_len):
         c_num = len(matrix[line])

@@ -35,33 +35,41 @@ def matrix_divided(matrix, div=None):
     """
 
     """ Div exception """
+    err_msg1 = "matrix must be a matrix (list of lists) of integers/floats"
+    err_msg2 = "Each row of the matrix must have the same size"
+    err_msg3 = "division by zero"
+    err_msg4 = "div must be a number"
+
     if div == 0:
-        raise ZeroDivisionError('division by zero')
+        raise ZeroDivisionError(err_msg3)
 
     if not type(div) is int and not type(div) is float:
-        raise TypeError('div must be a number')
+        raise TypeError(err_msg4)
 
     if div is None:
-        raise TypeError('division by zero')
+        raise TypeError(err_msg3)
 
     """ Matrix exception """
     line_len = len(matrix)
 
     if line_len == 0:
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError(msg1)
 
     for line in range(1, line_len):
         c_num = len(matrix[line])
         c_num_prev = len(matrix[line - 1])
+
         if not c_num == c_num_prev:
-            raise TypeError('Each row of the matrix must have the same size')
+            raise TypeError(err_msg2)
 
     column_len = len(matrix[0])
 
     for line in range(line_len):
         for col in range(column_len):
-            if not type(matrix[line][col]) is int and not type(matrix[line][col]) is float:
-                raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+            value = matrix[line][col]
+
+            if not type(value) is int and not type(value) is float:
+                raise TypeError(err_msg1)
 
     """ Function """
     new_matrix = []

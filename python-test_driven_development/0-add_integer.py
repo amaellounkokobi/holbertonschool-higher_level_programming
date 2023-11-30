@@ -23,6 +23,8 @@ examples:
    a must be an integer
 
 """
+
+
 def add_integer(a, b=98):
     """ add_integer :This function adds two integers
 

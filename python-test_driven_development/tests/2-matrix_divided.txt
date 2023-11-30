@@ -28,16 +28,7 @@ II - Error cases
 ...
 matrix must be a matrix (list of lists) of integers/floats
 
-- 2) Divider null
->>> matrix = [[1, 2, 3],[4, 5, 6]] #doctest:  +NORMALIZE_WHITESPACE
->>> try:
-...	print(matrix_divided(matrix, 0)) #doctest: +NORMALIZE_WHITESPACE
-... except Exception as e:
-...	print(e)
-...
-division by zero
-
-- 3) Empty matrix
+- 2) Empty matrix
 >>> matrix = [] #doctest: +NORMALIZE_WHITESPACE
 >>> try:
 ...	print(matrix_divided(matrix, 2)) #doctest: +NORMALIZE_WHITESPACE
@@ -46,8 +37,7 @@ division by zero
 ...
 matrix must be a matrix (list of lists) of integers/floats
 
-
-- 4) Matrice integrity
+- 3) Matrice integrity
 >>> matrix = [[1,2,3], [1,2]] #doctest: +NORMALIZE_WHITESPACE
 >>> try:
 ...	print(matrix_divided(matrix, 2)) #doctest: +NORMALIZE_WHITESPACE
@@ -55,3 +45,41 @@ matrix must be a matrix (list of lists) of integers/floats
 ...	print(e)
 ...
 Each row of the matrix must have the same size
+
+- 4) Divider null
+>>> matrix = [[1, 2, 3],[4, 5, 6]] #doctest:  +NORMALIZE_WHITESPACE
+>>> try:
+...	print(matrix_divided(matrix, 0)) #doctest: +NORMALIZE_WHITESPACE
+... except Exception as e:
+...	print(e)
+...
+division by zero
+
+- 5) Divider None
+>>> matrix = [[1, 2, 3],[4, 5, 6]] #doctest:  +NORMALIZE_WHITESPACE
+>>> try:
+...	print(matrix_divided(matrix, None)) #doctest: +NORMALIZE_WHITESPACE
+... except Exception as e:
+...	print(e)
+...
+div must be a number
+
+- 6) Divider None
+>>> matrix = [[1, 2, 3],[4, 5, 6]] #doctest:  +NORMALIZE_WHITESPACE
+>>> try:
+...	print(matrix_divided(matrix, "5")) #doctest: +NORMALIZE_WHITESPACE
+... except Exception as e:
+...	print(e)
+...
+div must be a number
+
+- 7) No Divider 
+>>> matrix = [[1, 2, 3],[4, 5, 6]] #doctest:  +NORMALIZE_WHITESPACE
+>>> try:
+...	print(matrix_divided(matrix)) #doctest: +NORMALIZE_WHITESPACE
+... except Exception as e:
+...	print(e)
+...
+div must be a number
+
+

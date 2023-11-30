@@ -3,7 +3,7 @@
 
 examples:
    >>> print(add_integer(1, 2))
-   3  
+   3
    >>> print(add_integer(100, -2))
    98
    >>> print(add_integer(2))
@@ -14,8 +14,8 @@ examples:
    ...     print(add_integer(4, "School"))
    ... except Exception as e:
    ...     print(e)
-   b must be an integer   
-   
+   b must be an integer
+
    >>> try:
    ...     print(add_integer(None))
    ... except Exception as e:
@@ -24,7 +24,7 @@ examples:
 
 """
 
-def add_integer(a,b=98):
+def add_integer(a, b=98):
     """ add_integer :This function adds two integers
 
     Args:

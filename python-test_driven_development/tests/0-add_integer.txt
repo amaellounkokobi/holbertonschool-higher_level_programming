@@ -1,0 +1,63 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+This text file tests the different use cases of ``add_integer``
+First we import the module
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+I - SIMPLE OPERATIONS
+
+- 1) Add to positives integers:
+>>> print(add_integer(1, 2))
+3
+
+- 2) Operation with negative b:
+>>> print(add_integer(100, -2))
+98
+
+- 3) Operation with one parameter:
+>>> print(add_integer(2))
+100
+
+- 4) Operation with a as a float:
+>>> print(add_integer(100.3, -2))
+98
+
+
+II - Error cases
+
+- 1) First parameter as a string:
+>>> try:
+...	 print(add_integer("School", 4))
+... except Exception as e:
+...	   print(e)
+...
+a must be an integer
+
+- 2) Second parameter as a string:
+>>> try:
+...	print(add_integer(4,"School"))
+... except Exception as e:
+...	   print(e)
+...
+b must be an integer
+
+- 3) Both parameters not integers:
+>>> try:
+...	print(add_integer(True,"School"))
+... except Exception as e:
+...	   print(e)
+...
+a must be an integer
+
+- 4) One parameter use function with a none integer:
+>>> try:
+...	print(add_integer(None))
+... except Exception as e:
+...	   print(e)
+...
+a must be an integer

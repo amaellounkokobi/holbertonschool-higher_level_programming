@@ -12,7 +12,7 @@ Examples:
 """
 
 
-def matrix_divided(matrix, div):
+def matrix_divided(matrix, div=None):
     """ This function that divides all elements of a matrix
     
     Args:
@@ -68,12 +68,3 @@ def matrix_divided(matrix, div):
             new_matrix[l].append(round(matrix[l][c] / div, 2))
 
     return new_matrix
-
-
-
-matrix = [
-        [1, 2, 3],
-        [4, 5, 6]
-    ]
-
-print(matrix_divided(matrix))

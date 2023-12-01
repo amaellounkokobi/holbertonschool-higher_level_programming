@@ -42,7 +42,7 @@ def matrix_divided(matrix, div):
 
 
     if div is None:
-        raise TypeError(err_msg3)
+        raise TypeError(err_msg4)
 
     if div == 0:
         raise ZeroDivisionError(err_msg3)

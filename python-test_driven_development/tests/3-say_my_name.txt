@@ -1,0 +1,41 @@
+The  ``3-say_my_name`` module
+=============================
+
+Using ``3-say_my_name.txt``
+---------------------------
+
+
+This text file contains the tests of different use cases for the function
+``say_my_name``
+First we import te module
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+I - SIMPLE OPERATIONS
+
+- 1) Say my name
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+>>> say_my_name("Bob")
+My name is Bob 
+
+
+II - ERROR CASES
+
+- 1) first_name error
+>>> say_my_name(12 , "Smith")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+
+- 2) last_name error
+>>> say_my_name("bobby", 12)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+- 3) no argument error
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'

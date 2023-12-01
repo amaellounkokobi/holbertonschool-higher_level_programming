@@ -27,6 +27,7 @@ def say_my_name(first_name, last_name=""):
     
     Returns:
        Prints 'My name is <first name> <lastname>'
+
     Raise: 
        TypeError 'first_name must be a string' when not a string and empty
        TypeError 'last_name must be a string' when not a string
@@ -43,5 +44,7 @@ def say_my_name(first_name, last_name=""):
         raise TypeError(last_name_err)
 
     output = "My name is {} {}".format(first_name, last_name) 
-    
-    return output
+
+    print(output)
+
+

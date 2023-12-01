@@ -40,6 +40,9 @@ def matrix_divided(matrix, div):
     err_msg3 = "division by zero"
     err_msg4 = "div must be a number"
 
+    if 'div' not in locals:
+        raise TypeError(err_msg4)
+
     if div == 0:
         raise ZeroDivisionError(err_msg3)
 

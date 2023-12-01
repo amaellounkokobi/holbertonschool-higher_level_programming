@@ -44,9 +44,6 @@ def matrix_divided(matrix, div):
     if div is None:
         raise TypeError(err_msg4)
 
-    if abs(div) == float('inf'):
-        raise TypeError(err_msg5)                              
-    
     if div == 0:
         raise ZeroDivisionError(err_msg3)
 

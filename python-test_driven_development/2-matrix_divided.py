@@ -39,10 +39,14 @@ def matrix_divided(matrix, div):
     err_msg2 = "Each row of the matrix must have the same size"
     err_msg3 = "division by zero"
     err_msg4 = "div must be a number"
+    err_msg5 = "div must be a valid number"
 
     if div is None:
         raise TypeError(err_msg4)
 
+    if abs(div) == float('inf'):
+        raise TypeError(err_msg5)                              
+    
     if div == 0:
         raise ZeroDivisionError(err_msg3)
 

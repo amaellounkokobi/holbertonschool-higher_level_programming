@@ -40,17 +40,15 @@ def matrix_divided(matrix, div):
     err_msg3 = "division by zero"
     err_msg4 = "div must be a number"
 
-    if 'div' not in locals():
-        raise TypeError(err_msg4)
+
+    if div is None:
+        raise TypeError(err_msg3)
 
     if div == 0:
         raise ZeroDivisionError(err_msg3)
 
     if not type(div) is int and not type(div) is float:
         raise TypeError(err_msg4)
-
-    if div is None:
-        raise TypeError(err_msg3)
 
     """ Matrix exception """
     line_len = len(matrix)

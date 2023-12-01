@@ -12,7 +12,7 @@ Examples:
 """
 
 
-def matrix_divided(matrix, div=None):
+def matrix_divided(matrix, div):
     """ This function that divides all elements of a matrix
 
     Args:

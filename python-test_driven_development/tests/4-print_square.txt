@@ -1,0 +1,70 @@
+The  ``4-print_square`` module
+==============================
+
+Using ``4-print_square.txt``
+----------------------------
+
+
+This text file contains the tests of different use cases for the function
+``print_square``
+First we import te module
+
+>>> say_my_name = __import__('4-print_square').say_my_name
+
+I - SIMPLE OPERATIONS
+
+- 1) Print square
+
+>>> print_square(4)
+####
+####
+####
+####
+
+- 2) Print square 0
+
+>>> print_square(0)
+<BLANKLINE>
+
+
+- 3) Print square
+
+>>> print_square(1)
+#
+
+II - ERROR CASES
+
+- 1) number error str
+>>> print_square("toto")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+- 2) number error float
+>>> print_square(0.5)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+- 3) number error boolean
+>>> print_square(True)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+- 4) number error boolean
+>>> print_square(True)
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+
+- 4) number error negative
+>>> print_square(-4)
+Traceback (most recent call last):
+TypeError: size must be >= 0
+
+
+- 5) no argument error
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'

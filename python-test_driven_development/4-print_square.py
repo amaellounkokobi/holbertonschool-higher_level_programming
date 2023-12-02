@@ -14,6 +14,7 @@ Exemples:
 
 """
 
+
 def print_square(size):
     """ Printing a visual version of the square
         parameter size

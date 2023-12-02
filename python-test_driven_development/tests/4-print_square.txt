@@ -9,7 +9,7 @@ This text file contains the tests of different use cases for the function
 ``print_square``
 First we import te module
 
->>> say_my_name = __import__('4-print_square').say_my_name
+>>> print_square = __import__('4-print_square').print_square
 
 I - SIMPLE OPERATIONS
 

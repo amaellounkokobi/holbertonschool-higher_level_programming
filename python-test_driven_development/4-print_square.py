@@ -37,7 +37,11 @@ def print_square(size):
         raise ValueError('size must be >= 0')
 
     """ Function """
-    for line in range(size):
-        for column in range(size):
-            print('#', end='')
+
+    if size == 0:
         print('')
+    else:
+        for line in range(size):
+            for column in range(size):
+                print('#', end='')
+            print('')

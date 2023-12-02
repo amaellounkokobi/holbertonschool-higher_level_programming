@@ -38,10 +38,7 @@ def print_square(size):
 
     """ Function """
 
-    if size == 0:
+    for line in range(size):
+        for column in range(size):
+            print('#', end='')
         print('')
-    else:
-        for line in range(size):
-            for column in range(size):
-                print('#', end='')
-            print('')

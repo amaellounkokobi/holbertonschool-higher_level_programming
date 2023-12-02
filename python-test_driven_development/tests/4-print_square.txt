@@ -24,7 +24,6 @@ I - SIMPLE OPERATIONS
 - 2) Print square 0
 
 >>> print_square(0)
-<BLANKLINE>
 
 
 - 3) Print square
